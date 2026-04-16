@@ -1,8 +1,13 @@
 import { Routes } from '@angular/router';
+import { MICRO_ROUTES } from 'dhomie-app';
 import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'micro', pathMatch: 'full' },
+  {
+    path: 'micro',
+    children: MICRO_ROUTES,
+  },
   {
     path: 'login',
     loadComponent: () => import('./pages/login/login.page').then((m) => m.LoginPage),
