@@ -1,0 +1,40 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'items.title' | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/profile">{{ 'items.profile' | translate }}</ion-button>
+      <ion-button fill="clear" (click)="logout()">{{ 'items.logout' | translate }}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="items-page" [fullscreen]="true">
+  <section class="items-shell">
+    @if (loading()) {
+      <p>{{ 'items.loading' | translate }}</p>
+    } @else {
+      @for (item of items(); track item.id) {
+        <ion-card>
+          <ion-button fill="clear" class="card-link" [routerLink]="['/items', item.id]">
+          <ion-card-header>
+            <ion-card-subtitle>{{ item.category }}</ion-card-subtitle>
+            <ion-card-title>{{ item.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{ item.description }}</p>
+            <div class="meta-row">
+              <ion-badge color="success">{{ ('items.status.' + item.status) | translate }}</ion-badge>
+              <span>{{ item.updatedAt | date: 'medium' }}</span>
+            </div>
+          </ion-card-content>
+          </ion-button>
+        </ion-card>
+      } @empty {
+        <p>{{ 'items.empty' | translate }}</p>
+      }
+    }
+  </section>
+</ion-content>

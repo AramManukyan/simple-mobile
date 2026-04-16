@@ -1,0 +1,27 @@
+.items-page {
+  --background: linear-gradient(180deg, #f8f6f0 0%, #fff 100%);
+}
+
+.items-shell {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 1rem 2rem;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: #526057;
+  font-size: 0.85rem;
+}
+
+.card-link {
+  width: 100%;
+  --padding-start: 0;
+  --padding-end: 0;
+  --color: inherit;
+  text-align: left;
+}

@@ -1,0 +1,43 @@
+:host {
+  display: block;
+}
+
+.login-page {
+  --background: linear-gradient(180deg, #f6f1e8 0%, #ffffff 55%, #eef5ef 100%);
+}
+
+.login-shell {
+  min-height: 100%;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.hero-copy h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.hero-copy p {
+  margin: 0;
+  color: #4f5d52;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  color: #8c6a3c;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 40px rgba(52, 66, 57, 0.12);
+}

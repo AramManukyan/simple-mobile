@@ -1,0 +1,71 @@
+{
+  "common": {
+    "notAvailable": "Not available"
+  },
+  "menu": {
+    "title": "DHomie",
+    "navigate": "Navigation",
+    "items": "Items",
+    "profile": "Profile",
+    "editProfile": "Edit profile",
+    "logout": "Log out"
+  },
+  "login": {
+    "title": "Welcome back",
+    "eyebrow": "DHomie Mobile",
+    "heading": "Find your next match faster",
+    "subtitle": "Sign in to manage listings, profile updates, and live item activity.",
+    "email": "Email",
+    "password": "Password",
+    "cta": "Sign in",
+    "loading": "Signing in...",
+    "errors": {
+      "signInFailed": "Unable to sign in. Please try again."
+    },
+    "validation": {
+      "email": "Enter a valid email address.",
+      "password": "Password must be at least 6 characters."
+    }
+  },
+  "items": {
+    "title": "Available items",
+    "profile": "Profile",
+    "logout": "Log out",
+    "loading": "Loading items...",
+    "empty": "No items are available right now.",
+    "open": "Open details",
+    "status": {
+      "available": "Available",
+      "reserved": "Reserved",
+      "adopted": "Adopted"
+    }
+  },
+  "itemDetails": {
+    "title": "Item details",
+    "loading": "Loading item details...",
+    "notFound": "We couldn't find that item.",
+    "category": "Category",
+    "location": "Location",
+    "notes": "Notes"
+  },
+  "profile": {
+    "title": "My profile",
+    "edit": "Edit",
+    "loading": "Loading profile...",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "city": "City",
+    "bio": "Bio"
+  },
+  "editProfile": {
+    "title": "Edit profile",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "city": "City",
+    "bio": "Bio",
+    "save": "Save changes",
+    "saving": "Saving..."
+  }
+}

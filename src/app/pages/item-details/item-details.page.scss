@@ -1,0 +1,17 @@
+.item-details-page {
+  --background: linear-gradient(180deg, #f7f4ef 0%, #ffffff 100%);
+}
+
+.item-details-shell {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 1rem 2rem;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}

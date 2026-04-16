@@ -1,0 +1,37 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'editProfile.title' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="edit-page" [fullscreen]="true">
+  <form class="edit-form" [formGroup]="form" (ngSubmit)="save()">
+    <ion-item>
+      <ion-label position="stacked">{{ 'editProfile.firstName' | translate }}</ion-label>
+      <ion-input formControlName="firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">{{ 'editProfile.lastName' | translate }}</ion-label>
+      <ion-input formControlName="lastName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">{{ 'editProfile.phone' | translate }}</ion-label>
+      <ion-input formControlName="phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">{{ 'editProfile.city' | translate }}</ion-label>
+      <ion-input formControlName="city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">{{ 'editProfile.bio' | translate }}</ion-label>
+      <ion-textarea formControlName="bio" autoGrow="true"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="saving()">
+      {{ saving() ? ('editProfile.saving' | translate) : ('editProfile.save' | translate) }}
+    </ion-button>
+  </form>
+</ion-content>
