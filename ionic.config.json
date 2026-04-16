@@ -1,0 +1,7 @@
+{
+  "name": "DHomie-MOBILE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
